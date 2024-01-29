@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html translate="no" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Pollo Loco</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/img_pollo_locco/img/6_salsa_bottle/salsa_bottle.png">
+    <script src="js/models/drawable-object.class.js"></script>
+    <script src="js/models/movable-object.class.js"></script>
+    <script src="js/models/chicken.class.js"></script>
+    <script src="js/models/baby-chicken.object.class.js"></script>
+    <script src="js/models/endboss.class.js"></script>
+    <script src="js/models/character.class.js"></script>
+    <script src="js/models/pickable-coin.class.js"></script>
+    <script src="js/models/pickable-bottle.class.js"></script>
+    <script src="js/models/spawn-endboss-button.object.class.js"></script>
+    <script src="js/models/clouds.class.js"></script>
+    <script src="js/models/background-object.class.js"></script>
+    <script src="js/models/status-bar-object.class.js"></script>
+    <script src="js/models/status-bar-health.class.js"></script>
+    <script src="js/models/status-bar-coins.class.js"></script>
+    <script src="js/models/status-bar-bottles.class.js"></script>
+    <script src="js/models/status-bar-endboss.class.js"></script>
+    <script src="js/models/status-bar-endboss-icon.class.js"></script>
+    <script src="js/models/collidable-object.class.js"></script>
+    <script src="js/models/throwable-object.class.js"></script>
+    <script src="js/models/world.class.js"></script>
+    <script src="js/models/keyboard.class.js"></script>
+    <script src="js/models/level.class.js"></script>
+    <script src="js/levels/level1.js"></script>
+    <script src="js/game.js"></script>
+    
+</head>
+<body>
+    <div>
+    <div id="start-image" class="start-image">
+        <div class="background-image">
+        <div id="background-fonts" class="menu-container">
+            <div class="font-start-button"><a href="#"><h2 onclick="init()">Start</h2></a></div>
+            <div class="font-tutorial"><a href="need_to_know/need_to_know.html"><h2>Need to know</h2></a></div>     
+        </div>
+        </div>
+    <div class="main-container d-none"  id="main-container">
+        
+        <div class="child-container">
+    
+    <h1 class="game-name-font">El Pollo Loco</h1>
+  
+      <div id="button-bar" class="button-bar">
+        <h6>Level:1</h3>
+        <div class="icons-container">
+            <div id="music-off" class="music-icon-container">
+               <img onclick="muteMusic()"  class="music-icon" src="img/icons/music-icon.png">
+            </div>
+            <div id="music-on" class="music-icon-container d-none">
+                <img onclick="muteMusic()"  class="music-icon" src="img/icons/music-mute-icon.png">
+                
+             </div>
+
+            <div class="fullscreen-icon-container">
+        <img onclick="fullscreen()" class="fullscreen-icon" src="img/icons/fullscreen-icon.png">
+             </div>
+        </div>
+       </div> 
+    
+    <div class="canvas-container">
+    <canvas id="canvas" width="720px" height="480px"></canvas>
+
+    <div id="button-bar2" class="button-bar2">
+        <div class="move-btns">
+            <div class="moveL-btn-cont">
+                <img src="img/icons/moveleft-button.png" class="moveL-btn" id="moveL-btn">
+             </div>
+             <div class="moveR-btn-cont">
+         <img src="img/icons/moveright-button.png" class="moveR-button" id="moveR-btn">
+              </div>
+            </div>
+
+            <div class="action-btns">
+            <div class="throw-bottle-bnt-cont">
+        <img src="img/icons/throwbottle-button.png" class="throw-bottle-btn" id="throw-bottle">
+             </div>
+             <div class="jump-btn-cont">
+                <img src="img/icons/jump-button.png" class="jump-btn" id="jump-btn">      
+             </div>
+        </div>
+       </div> 
+   
+    </div>
+    
+       <div id="game-over-container" class="game-over-container d-none">
+        <div class="retry-button-container">
+            <div class="buton-text">
+                <h6 id="win-or-loose-msg"></h6>
+        <button onclick="reloadPage()" class="button">Main Menu</button>
+            </div>
+        </div>
+        <img class="game-over-font" src="img/img_pollo_locco/img/9_intro_outro_screens/game_over/game over.png">
+        
+    </div>
+       <div id="controls-container" class="controls-container">
+            <div class="arrow-and-d-keys-img-container">
+                <div class="arrow-container">
+                <img class="arrow-buttons-img" src="img/icons/controls/arrow-buttons.png">
+                <p>Move</p>
+                </div>
+                <div>
+                <img class="d-button-img" src="img/icons/controls/d-button.png">
+                <p>throw</p>
+                </div>
+                <div>
+                <img class="spacebar-img" src="img/icons/controls/spacebar-img.png">
+                <p>jump</p>
+                </div>
+            </div>
+           <div class="turn-device">
+            <img src="img/icons/turn-device.png">
+            <h5>Please turn device</h2>
+            </div>
+
+       </div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

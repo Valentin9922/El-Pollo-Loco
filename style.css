@@ -1,0 +1,484 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.game-name-font{
+    margin:0px;
+    font-size: 45px;
+}
+
+.main-container{
+    position: absolute;
+    top:0;
+    width: 100%;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('img/background-image/desert-5112222.png');
+    background-position: center;
+    font-family: 'Bungee Spice', cursive;
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    font-size: 35px;
+    backdrop-filter: blur(3px);
+    text-align: center;
+    margin:0px;
+    z-index: 3;
+}
+
+canvas{
+    background-color: black;
+    border: 3px solid #443b3b;
+}
+
+.button-bar{
+    top: 54px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f2d79400;
+ 
+    height: 50px;
+    margin: 0px;
+    z-index: 4;
+    max-width: 720px;
+    width: 100%;}
+
+.icons-container{
+    display:flex;
+    align-items: center;
+   margin-right: 20px;
+   height: 100%;
+
+}
+
+.fullscreen-icon-container{
+    display: flex;
+    width: 30px;
+}
+
+.fullscreen-icon{
+    width: 30px;
+    height:30px;
+    margin:10px;
+}
+
+.fullscreen-icon:hover{
+    cursor: pointer;
+    width: 34px;
+    height:34px;
+}
+
+.music-icon-container{
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+}
+
+.music-icon{
+    width: 30px;
+    height:30px;  
+}
+
+.music-icon:hover{
+    cursor: pointer;
+    width: 34px;
+    height: 34px; 
+}
+
+.music-mute-font{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color:red;
+    border: none;
+    text-shadow: none;
+    text-align: center;
+}
+
+.menu-image{
+    height: 100%;
+    width: 100%;
+}
+
+.background-image{
+    background-image:url('img/img_pollo_locco/img/5_background/complete_background.png'); 
+    background-size:cover;
+    width: 100%; 
+    height: 100vh;
+}
+
+.start-image{
+    width: 100%;
+    height: 100%;
+    font-family: 'Bungee Spice', cursive;
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    font-size: 25px;
+}
+
+.menu-container{
+    box-shadow: 0 0 2px 1px rgba(112, 105, 59, 0.8);
+    border: 4px solid rgb(98, 76, 6);
+    border-radius: 4px;
+    padding: 5px;
+    width: 70%;
+    height: 10%;
+    top:5%;
+    left:16%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.548);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.arrow-and-d-keys-img-container{
+    margin-top: 5px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    font-size: 25px;
+    text-align: center;
+}
+
+.arrow-buttons-img{
+    width: 110px;
+    height: 70px;
+}
+
+p{
+    margin: 0px;
+}
+
+.arrow-container{
+    display: flex;
+    flex-direction: column;
+}
+.d-button-img{
+    width: 70px;
+    height: 60px;
+}
+
+.spacebar-img{
+    height:60px
+}
+
+a{
+    text-decoration: none;
+}
+
+.background-fonts{
+    height: 300px;
+    display: flex;
+    text-align: center;
+}
+
+.font-start-button:hover{
+    cursor: pointer;
+    text-shadow: -1px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+}
+
+.font-tutorial:hover{
+    cursor: pointer;
+    text-shadow: -1px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+}
+
+.font-controls:hover{
+    cursor: pointer;
+    text-shadow: -1px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+}
+
+h6{
+    font-size:15px;
+    margin-left:10px;
+}
+
+.d-none{
+    display: none;
+}
+
+.button-bar2{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    margin: 0px;
+    bottom: 7px;
+    width: 100%;
+    max-width: 720px;
+}
+
+.move-btns{
+    display: flex;
+}
+
+.moveL-btn-cont{
+    display: flex;
+    width: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.moveL-btn-cont{
+    display: flex;
+    height: 30px;
+}
+
+.moveR-btn-cont{
+    display: flex;
+    width: 30px;
+    margin-left: 10px;
+}
+
+.moveR-btn-cont{
+    width: 30px;
+    height: 30px;
+}
+
+.action-btns{
+    display: flex;
+}
+
+.jump-btn-cont{
+    display: flex;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.jump-btn{
+    width: 30px;
+    height: 30px;
+}
+
+.throw-bottle-bnt-cont{
+    display: flex;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.throw-bottle-bnt{
+    width: 30px;
+    height: 30px;   
+}
+
+canvas{
+    background-color: black;
+    display: block;
+}
+
+.canvas-container{
+    position: relative;
+    width: 725px;
+}
+
+.game-over-font{
+    width: 725px;
+    height: 480px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #443b3b9c;
+}
+
+.retry-button-container{
+    position: absolute;
+    width:720px;
+    height: 450px;  
+    display: flex;
+    justify-content: center;
+    align-items:end;
+}
+
+.button {
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #e39c04;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 9px #6c2308;
+    z-index: 1;
+  }
+  .button:hover {
+    background-color: #ffb300;
+}
+  .button:active {
+    background-color: #6c2308;
+    box-shadow: 0 5px #7D2F13;
+    transform: translateY(4px);
+  }
+
+  .turn-device{
+    display:none;
+  }
+
+  .buton-text{
+    display:flex;
+    flex-direction: column;
+    z-index: 4;
+  }
+
+  h6{
+    font-size: 15px;
+    margin:8px;
+  }
+
+@media only screen and (max-width:1000px){
+
+   .menu-container{
+    flex-direction: column;
+    width: 65%;
+    height: 30%;
+    align-items: center;
+   }
+
+    h2{
+        margin: 0px;
+    }
+
+    .arrow-buttons-img{
+        display: none;
+    }
+
+    .d-button-img{
+        display: none;
+    }
+
+    .spacebar-img{
+        display: none;
+    }
+
+    p{display:none;}  
+}
+
+    .main-container{
+        height:100vh;
+    }
+
+  
+    .button-bar {
+        top:0px;
+    }
+
+    .turn-device{
+        display:none;
+      }
+    
+@media only screen and (max-width:720px){
+
+    .start-image{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .game-over-font{
+        width: 100%;
+        max-height: 250px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #443b3b9c;
+    }
+
+    .child-container{
+        width: 100%;
+        height:100%;
+    }
+    canvas{
+        width: 100%;
+        border: none;
+        border-top: 3px solid #443b3b;
+    }
+
+    .canvas-container{
+        width: 100%;
+        max-height: 480px;
+    }
+
+    h1{
+        padding:0px;
+        font-size: 20px;
+    }
+
+    h5{
+        margin:0px;
+    }
+
+    .background-image{
+        background-size: cover;
+        background-position: unset;
+    }
+
+    .retry-button-container{
+        position: absolute;
+        width:100%;
+        height: 230px;  
+        display: flex;
+        justify-content: center;
+        align-items:end;
+    }
+
+    .button {
+        padding: 10px 15px;
+    }
+
+    .game-name-font{
+        display: none;
+    }
+
+    .button-bar {
+        top:0px;
+    }
+
+    .turn-device{
+        display:none;
+      } 
+
+}
+
+@media only screen and (max-width:450px){
+    .turn-device{
+        display:block;
+      }
+}
+
+@media only screen and (max-height:480px){
+  
+    html{
+        overflow: hidden;
+    }
+
+    .game-name-font{
+        display: none; 
+    }
+
+    .game-over-font{
+        height:100vh;  
+        max-height: 100vh;
+    }
+
+    .retry-button-container{
+        height:90%;
+    }
+
+    .button-bar {
+        top:0px;
+    }
+
+    canvas{
+        height:100vh;
+        width:100%;
+    }
+
+
+}
